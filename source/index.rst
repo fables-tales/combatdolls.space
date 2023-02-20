@@ -8,7 +8,8 @@ However, this TOC still needs to exist to make Sphinx happy.
    :maxdepth: 2
    :caption: Contents:
    
-   guides
+   guides/index
+
 
 
 Indices and tables

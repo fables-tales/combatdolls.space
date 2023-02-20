@@ -28,23 +28,6 @@
           </svg>
           <span>{% trans %}Back to top{% endtrans %}</span>
         </a>
-        <div class="content-icon-container">
-          {% if theme_top_of_page_button == "edit" -%}
-          {%- include "components/edit-this-page.html" with context -%}
-          {%- elif theme_top_of_page_button != None -%}
-          {{ warning("Got an unsupported value for 'top_of_page_button'") }}
-          {%- endif -%}
-          {#- Theme toggle -#}
-          <div class="theme-toggle-container theme-toggle-content">
-            <button class="theme-toggle">
-              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
-              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
-              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
-              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
-            </button>
-          </div>
-        </div>
-
         <article role="main">
           {% include "landing.html" %}
         </article>
