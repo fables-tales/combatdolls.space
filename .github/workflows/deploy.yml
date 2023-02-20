@@ -31,6 +31,10 @@ jobs:
         with:
           pre-build-command: "pip install pipenv && pipenv install --deploy"
           docs-folder: "."
+      - uses: actions/upload-artifact@master
+        with:
+          name: site-build
+          path: build
   deploy:
     needs: build
     environment:
@@ -38,6 +42,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/download-artifact@master
+        with:
+          name: site-build
+          path: build
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
