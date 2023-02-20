@@ -20,12 +20,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          lfs: true
       - name: Sphinx Build
         uses: combatdolls/sphinx-action@latest
         with:
           pre-build-command: "pip install pipenv && pipenv install --deploy"
           docs-folder: "."
-      - uses: actions/upload-artifact@master
+      - name: Upload Build
+        uses: actions/upload-artifact@master
         with:
           name: site-build
           path: build
