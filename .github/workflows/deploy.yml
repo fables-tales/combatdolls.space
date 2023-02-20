@@ -27,7 +27,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Sphinx Build
-        uses: ammaraskar/sphinx-action@master
+        uses: combatdolls/sphinx-action@latest
         with:
           pre-build-command: pip install pipenv
           docs-folder: "."
