@@ -21,33 +21,28 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Sphinx Build
+        uses: ammaraskar/sphinx-action@master
+        with:
+          pre-build-command: pip install pipenv
+          docs-folder: "."
   deploy:
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.11
-      - name: Export dependencies
-        run: |
-          python -m pip install pipenv
-          pipenv requirements > requirements.txt
-      - name: Sphinx Build
-        uses: ammaraskar/sphinx-action@master
-        with:
-          docs-folder: "."
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          # Upload entire repository
           path: 'build'
       - name: Deploy to GitHub Pages
         id: deployment
