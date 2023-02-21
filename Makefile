@@ -15,6 +15,7 @@ help:
 .PHONY: help Makefile serve
 
 serve:
+	rm -rf "$(BUILDDIR)"
 	pipenv run sphinx-autobuild --open-browser --port 0 "$(SOURCEDIR)" "$(BUILDDIR)"
 
 # Catch-all target: route all unknown targets to Sphinx using the new
