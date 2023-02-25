@@ -10,6 +10,8 @@ function init(root) {
 
   renderer = new THREE.WebGLRenderer();
   renderer.setSize(rect.width, rect.height);
+  renderer.domElement.style.top = `${rect.top}px`;
+  renderer.domElement.style.left = `${rect.left}px`;
 
   starGeo = new THREE.Geometry();
   for (let i = 0; i < 6000; i++) {
@@ -42,10 +44,11 @@ function init(root) {
     "resize",
     () => {
       let rect = root.getBoundingClientRect();
-      console.log(rect);
-      camera.aspect = rect.innerWidth / rect.innerHeight;
+      camera.aspect = rect.width / rect.height;
       camera.updateProjectionMatrix();
-      renderer.setSize(rect.innerWidth, rect.innerHeight);
+      renderer.setSize(rect.width, rect.height);
+      renderer.domElement.style.top = `${rect.top}px`;
+      renderer.domElement.style.left = `${rect.left}px`;
     },
     false
   );
