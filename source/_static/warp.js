@@ -1,9 +1,34 @@
 let scene, camera, renderer, stars, starGeo;
 
+/// Get the bounding rect relative to the document
+function getRect(elem) {
+  // crossbrowser version
+  var box = elem.getBoundingClientRect();
+
+  var body = document.body;
+  var docEl = document.documentElement;
+
+  var scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
+  var scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft;
+
+  var clientTop = docEl.clientTop || body.clientTop || 0;
+  var clientLeft = docEl.clientLeft || body.clientLeft || 0;
+
+  var top = box.top + scrollTop - clientTop;
+  var left = box.left + scrollLeft - clientLeft;
+
+  return {
+    top: Math.round(top),
+    left: Math.round(left),
+    width: box.width,
+    height: box.height,
+  };
+}
+
 function init(root) {
   scene = new THREE.Scene();
 
-  let rect = root.getBoundingClientRect();
+  let rect = getRect(root);
   camera = new THREE.PerspectiveCamera(60, rect.width / rect.height, 1, 1000);
   camera.position.z = 1;
   camera.rotation.x = Math.PI / 2;
@@ -43,7 +68,7 @@ function init(root) {
   window.addEventListener(
     "resize",
     () => {
-      let rect = root.getBoundingClientRect();
+      let rect = getRect(root);
       camera.aspect = rect.width / rect.height;
       camera.updateProjectionMatrix();
       renderer.setSize(rect.width, rect.height);
