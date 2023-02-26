@@ -8,7 +8,7 @@
 
 project = 'Combat Dolls Clan'
 copyright = '2023, Combat Dolls Destiny Clan'
-author = 'Waterfall of Lead'
+author = 'Waterfall of Lead, Bee Stings from Shadows'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
