@@ -7,6 +7,6 @@ blah blah have some guides.
    :maxdepth: 2
    :caption: Contents:
    
+   navigation
    weapons
-
-
+   blind-raids
