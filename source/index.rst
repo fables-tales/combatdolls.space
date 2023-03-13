@@ -12,6 +12,7 @@ If you want to actually edit the front page, you want
    :caption: Contents:
    
    guides/index
+   meta/index
 
 
 
