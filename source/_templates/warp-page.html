@@ -94,3 +94,10 @@
   </div>
 </div>
 {%- endblock %}
+
+{%- block scripts -%}
+{{ super() }}
+
+<script src="{{pathto('_static/warp.js', 1)}}" type="module"></script>
+
+{%- endblock -%}

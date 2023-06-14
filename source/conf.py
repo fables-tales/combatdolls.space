@@ -31,5 +31,4 @@ html_title = 'Combat Dolls'
 
 html_js_files = [
     'three.min.js',
-    'warp.js',
 ]

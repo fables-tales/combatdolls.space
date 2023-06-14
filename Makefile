@@ -16,7 +16,7 @@ help:
 
 serve:
 	rm -rf "$(BUILDDIR)"
-	pipenv run sphinx-autobuild --open-browser --port 0 "$(SOURCEDIR)" "$(BUILDDIR)"
+	pipenv run sphinx-autobuild -a --open-browser --port 0 "$(SOURCEDIR)" "$(BUILDDIR)"
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
