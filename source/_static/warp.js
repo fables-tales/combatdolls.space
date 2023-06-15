@@ -31,8 +31,7 @@ class CDWarpElement extends HTMLElement {
 
     const shadow = this.attachShadow({ mode: "open" });
     this.canvas = dom`<canvas is=cd-starfield></canvas>`;
-    shadow.appendChild(
-      dom`
+    shadow.appendChild(dom`
       <style>
         canvas {
           position: absolute;
@@ -43,8 +42,8 @@ class CDWarpElement extends HTMLElement {
       </style>
       <slot></slot>
       ${this.canvas}
-    `
-    );
+    `);
+    this.style.transition = "background-color 1s linear";
     this.style.background = "none";
 
     const ro = new ResizeObserver(() => {
