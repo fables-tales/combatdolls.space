@@ -15,17 +15,10 @@ You don't need to be queer to join.
 You don't need to be an exo; we can help with that.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
+   :titlesonly:
    :caption: Contents:
    
    guides/index
    meta/index
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
