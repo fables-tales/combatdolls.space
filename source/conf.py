@@ -34,3 +34,9 @@ html_logo = '_static/pink-circles.png'
 html_js_files = [
     'three.min.js',
 ]
+
+html_theme_options = {
+    "light_css_variables": {
+        "font-stack": "'Josefin Sans', sans-serif",
+    },
+}
