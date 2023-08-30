@@ -1,3 +1,6 @@
+:hide-toc: True
+:front_page: True
+
 Combat Dolls, A Destiny Clan
 ============================
 

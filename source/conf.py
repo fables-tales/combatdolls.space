@@ -18,9 +18,9 @@ extensions = []
 templates_path = ['_templates']
 exclude_patterns = []
 
-html_additional_pages = {
-    "index": "warp-page.html"
-}
+# html_additional_pages = {
+#     "index": "warp-page.html"
+# }
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
