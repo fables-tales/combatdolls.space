@@ -1,0 +1,10 @@
+destiny_exo_by_kowalski7cc_dawc6uf.png:
+  License: CC-BY-SA
+  Source: https://www.deviantart.com/kowalski7cc/art/Destiny-Exo-658978215
+  Author: 
+    - kowalski7cc
+    - https://kowalski7cc.xyz/
+    - https://mastodon.social/@kowalski7cc
+flower.xcf:
+pink-circles.xcf:
+  Author: AstraLuma, remixing Bungie
