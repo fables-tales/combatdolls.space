@@ -13,10 +13,14 @@
 
 {%- block extra_styles %}
 <style>
-  .content.front-page {
-    width: 100%;
+  .content {
+    width: auto;
+    max-width: 80vw;
   }
 
+  .toc-drawer {
+    min-width: 15vw;
+  }
   cd-warp {
     display: block;
     background: black;
@@ -49,11 +53,48 @@
   }
 
   cd-warp > nav > * {
+    min-width: 8rem;
     display: block;
-    background: white;
-    color: black;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgba(100%, 100%, 100%, 0.85);
+    border-radius: 15px;
     margin: 1em 0;
     padding: 1em;
+    text-align: center;
+    text-shadow: #312 1px 0 4px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  cd-warp > nav > *:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    text-shadow: #FDE 1px 0 4px;
+  }
+  {% if (meta is mapping and meta.front_page) %}
+    .main {
+      position: relative;
+      top: calc(-1 * var(--header-height));
+      z-index: 20;
+    }
+  {% endif %}
+
+  @media screen and (max-width: 550px) {
+    cd-warp {
+      padding: 2rem 5rem;
+    }
+
+    cd-warp h1  {
+      font-size: 2rem !important;
+    }
+
+    cd-warp > heading > p {
+      font-size: 1.5rem !important;
+    }
+
+    cd-warp > nav {
+      margin-top: 0.25rem;
+    }
   }
 </style>
 {%- endblock -%}
@@ -81,6 +122,7 @@
 
 <div class="page">
   <header class="mobile-header">
+    {% if not (meta is mapping and meta.front_page) %}
     <div class="header-left">
       <label class="nav-overlay-icon" for="__navigation">
         <div class="visually-hidden">Toggle site navigation sidebar</div>
@@ -104,6 +146,7 @@
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
     </div>
+    {% endif %}
   </header>
   {% if not (meta is mapping and meta.front_page) %}
   <aside class="sidebar-drawer">

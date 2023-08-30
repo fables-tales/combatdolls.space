@@ -8,7 +8,7 @@ prepared and into our regular raid teams.
 We're open to all skill levels and will happily infodump about the mechanics of
 Destiny and encourage our members to always push to more challenging content.
 
-Before joining, please be aware we have and enforce a :ref:`Code of Conduct`.
+Before joining, please be aware we have and enforce a :doc:`meta/coc`.
 
 You don't need to be queer to join.
 
