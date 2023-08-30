@@ -94,7 +94,7 @@
       </label>
     </div>
   </header>
-  {% if not furo_hide_toc %}
+  {% if not (meta is mapping and meta.front_page) %}
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       {% block left_sidebar %}
@@ -108,7 +108,7 @@
   </aside>
   {% endif %}
   <div class="main">
-    <div class="content {{}}">
+    <div class="content{{' front-page' if meta is mapping and meta.front_page else ''}}">
       <div class="article-container">
         <a href="#" class="back-to-top muted-link">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
