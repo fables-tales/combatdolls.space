@@ -23,7 +23,7 @@ jobs:
         with:
           lfs: true
       - name: Sphinx Build
-        uses: combatdolls/sphinx-action@latest
+        uses: combatdolls/sphinx-action@master
         with:
           pre-build-command: "pip install pipenv && pipenv install --deploy"
           docs-folder: "."
