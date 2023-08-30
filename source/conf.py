@@ -29,7 +29,7 @@ html_theme = 'furo'
 html_static_path = ['_static']
 html_title = 'Combat Dolls'
 
-html_logo = '_static/pink-circles.png'
+# html_logo = '_static/pink-circles.png'
 
 html_js_files = [
     'three.min.js',
