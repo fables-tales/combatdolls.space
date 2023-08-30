@@ -1,11 +1,18 @@
 :hide-toc: True
 :front_page: True
 
-The contents of this file does not actually appear on the site.
-However, this TOC still needs to exist to make Sphinx happy.
+Combat Dolls is a queer-focused and PVE-focused Destiny clan.
+We pride ourselves on getting new players interested in high level content
+prepared and into our regular raid teams.
 
-If you want to actually edit the front page, you want
-``_templates/landing.html``.
+We're open to all skill levels and will happily infodump about the mechanics of
+Destiny and encourage our members to always push to more challenging content.
+
+Before joining, please be aware we have and enforce a :ref:`Code of Conduct`.
+
+You don't need to be queer to join.
+
+You don't need to be an exo; we can help with that.
 
 .. toctree::
    :maxdepth: 2
