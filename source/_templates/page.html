@@ -71,7 +71,25 @@
     color: black;
     text-shadow: #FDE 1px 0 4px;
   }
-  {% if (meta is mapping and meta.front_page) %}
+
+  .button-discord-invite {
+    /* These are discord brand colors */
+    display: inline-box;
+    padding: 1em;
+    padding-left: 2.5em;
+    background: url("/_static/discord-blurple.svg") no-repeat local 1em 50%/1em, rgba(88, 101, 242, 0.2);
+    color: rgba(88, 101, 242);
+    text-decoration: none;
+    border-radius: 15px;
+  }
+
+  .button-discord-invite:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+    background: url("/_static/discord-white.svg") no-repeat local 1em 50%/1em, rgba(88, 101, 242, 0.8);
+  }
+  
+ {% if (meta is mapping and meta.front_page) %}
     .main {
       position: relative;
       top: calc(-1 * var(--header-height));
