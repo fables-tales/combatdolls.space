@@ -14,6 +14,14 @@ You don't need to be queer to join.
 
 You don't need to be an exo; we can help with that.
 
+.. raw:: html
+
+   <p style="margin: 2em 0">
+   <a href="https://discord.gg/ScxCH9u75G" target="_blank" class="button-discord-invite">
+   Join Us on Discord!
+   </a>
+   </p>
+
 .. toctree::
    :maxdepth: 3
    :titlesonly:
