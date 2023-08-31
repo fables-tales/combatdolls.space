@@ -138,8 +138,8 @@
 {%- endif %}
 
 <div class="page">
+  {% if not (meta is mapping and meta.front_page) %}
   <header class="mobile-header">
-    {% if not (meta is mapping and meta.front_page) %}
     <div class="header-left">
       <label class="nav-overlay-icon" for="__navigation">
         <div class="visually-hidden">Toggle site navigation sidebar</div>
@@ -163,8 +163,8 @@
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
     </div>
-    {% endif %}
   </header>
+  {% endif %}
   {% if not (meta is mapping and meta.front_page) %}
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
