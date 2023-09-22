@@ -15,4 +15,4 @@ the systems of Destiny, general conceptual guides, or clan-specific practices.
    
    navigation
    weapons
-   blind-raids
+   raids/index
