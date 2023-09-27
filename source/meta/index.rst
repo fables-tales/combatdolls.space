@@ -10,3 +10,4 @@ information about Combat Dolls.
    :caption: Contents:
    
    coc
+   schedule
