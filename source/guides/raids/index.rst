@@ -7,5 +7,6 @@ Raid Guides
    :caption: Contents:
    
    blind
+   dsc/index
    kings-fall/index
    vow/index
