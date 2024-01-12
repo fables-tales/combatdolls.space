@@ -15,4 +15,5 @@ the systems of Destiny, general conceptual guides, or clan-specific practices.
    
    navigation
    weapons
+   dlc
    raids/index
