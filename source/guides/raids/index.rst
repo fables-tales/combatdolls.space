@@ -10,4 +10,5 @@ Raid Guides
    crota/index
    dsc/index
    kings-fall/index
+   root/index
    vow/index
