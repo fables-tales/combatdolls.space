@@ -18,3 +18,5 @@ the systems of Destiny, general conceptual guides, or clan-specific practices.
    dlc
    raids/index
    weekly
+   gambit
+   red-borders
