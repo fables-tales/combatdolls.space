@@ -17,3 +17,4 @@ the systems of Destiny, general conceptual guides, or clan-specific practices.
    weapons
    dlc
    raids/index
+   weekly
