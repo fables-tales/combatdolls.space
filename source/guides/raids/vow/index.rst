@@ -1,6 +1,10 @@
 Vow of the Disciple
 ===================
 
+General callouts:
+
+.. figure:: VotD.png.webp
+
 Traversal: Disciple's Bog
 ---------------------------
 
