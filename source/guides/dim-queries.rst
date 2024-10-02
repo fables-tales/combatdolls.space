@@ -22,3 +22,10 @@ When you unlock a pattern, it's pretty likely you'll have a bunch of uncrafted v
   is:patternunlocked -is:crafted
 
 Since these are probably worse than if you crafted them (no enhanced perks or masterwork), you may wish to junk these.
+
+Armor you can probably trash
+----------------------------
+
+After a while you'll have plenty of good armor, and some that isn't especially useful. A base stat score of 60 is usually a good place to start.::
+
+-source:raid is:armor -is:classitem basestat:total:<60 not:locked -is:inloadout
